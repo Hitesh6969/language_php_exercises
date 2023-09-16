@@ -1,23 +1,19 @@
 <?php
 
-$numeri = [];
-$posizione = -1;
-$n = 10;
+$arr = array(2,34,1,45,21,3,4,42,6,44);
+$pos = 0;
 
-for ($i = 0; $i < $n; $i++) {
-    echo "inserisci il numero: \n";
-    $numeri[$i] = readline();
+while(1)
+{
+    echo "inserire il numero da cercare: ";
+    $n = readline();
+    for($i = 0; $i < 10; $i++)
+    {
+        if($arr[$i] == $n)
+        {
+            echo $i;
+            echo "\n";
+        }
+    }
 }
-
-echo "\ninserisci il numero da ricercare: \n";
-$numero = readline();
-
-for ($i = 0; $i < $n; $i++) {
-    if ($numeri[$i] == $numero)
-        $posizione = $i;
-}
-
-if ($posizione >= 0)
-    echo "\n$numero trovato in posizione: $posizione";
-else
-    echo "\n$numero non presente nell'array";
+?>

@@ -1,8 +1,8 @@
 <?php
 
-    $arr = [5];
-
-    for($i = 0; $i < count($arr); $i++)
+    $arr = [];
+    $length = 5;
+    for($i = 0; $i < $length; $i++)
     {
         echo "inserire il ";
         echo $i + 1;
